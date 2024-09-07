@@ -1,13 +1,14 @@
 import gc
 import os
 import kaggle_evaluation
+from kaggle_evaluation.mcts_inference_server import MCTSInferenceServer
 
 import polars as pl
 
-import FE
-import MD
-import CFG
-import EDA
+from FE import FE
+from MD import MD
+from CFG import CFG
+from EDA import EDA
 
 def train_model(fe, md, CFG):
     
@@ -68,7 +69,7 @@ def main():
     counter = 0
 
     # Load and process test datainference_server = kaggle_evaluation.mcts_inference_server.MCTSInferenceServer(predict)
-    inference_server = kaggle_evaluation.mcts_inference_server.MCTSInferenceServer(predict)
+    inference_server = MCTSInferenceServer(predict)
 
     if os.getenv('KAGGLE_IS_COMPETITION_RERUN'):
         inference_server.serve()

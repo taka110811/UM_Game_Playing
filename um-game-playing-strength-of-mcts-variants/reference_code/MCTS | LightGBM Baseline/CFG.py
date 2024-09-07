@@ -3,9 +3,9 @@ from pathlib import Path
 class CFG:
     
     # Paths to competition data
-    train_path = Path('../data/train.csv')
-    test_path = Path('../data/test.csv')
-    subm_path = Path('../data/sample_submission.csv')
+    train_path = Path('um-game-playing-strength-of-mcts-variants/data/train.csv')
+    test_path = Path('um-game-playing-strength-of-mcts-variants/data/test.csv')
+    subm_path = Path('um-game-playing-strength-of-mcts-variants/data/sample_submission.csv')
     
     # Feature engineering (FE) arguments
     batch_size = 16384

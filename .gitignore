@@ -1,3 +1,5 @@
 um-game-playing-strength-of-mcts-variants/data/*
 
 !/um-game-playing-strength-of-mcts-variants/data/.gitkeep
+
+um-game-playing-strength-of-mcts-variants/reference_code/MCTS | LightGBM Baseline/kaggle_evaluation/__pycache__/*

@@ -1,5 +1,6 @@
 import polars as pl
 import pandas as pd
+import pyarrow as pa
 
 class FE:
     
@@ -101,7 +102,7 @@ class FE:
             print('Memory usage: {:.2f} MB\n'.format(mem))
 
             # Display first rows of the DataFrame
-            display(df.head())
+            print(df.head())
 
         # Display basic information for non-EDA processing
         else:
