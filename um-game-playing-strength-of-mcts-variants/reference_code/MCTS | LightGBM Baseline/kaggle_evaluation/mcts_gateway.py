@@ -20,7 +20,7 @@ class MCTSGateway(kaggle_evaluation.core.templates.Gateway):
 
     def unpack_data_paths(self):
         if not self.data_paths:
-            self.test_path = '/Users/taka/Data_Science/Kaggle/UM_Game_Playing/um-game-playing-strength-of-mcts-variants/data/test.csv'
+            self.test_path = 'um-game-playing-strength-of-mcts-variants/data/test.csv'
             self.sample_submission_path = 'um-game-playing-strength-of-mcts-variants/data/sample_submission.csv'
         else:
             self.test_path, self.sample_submission_path = self.data_paths
