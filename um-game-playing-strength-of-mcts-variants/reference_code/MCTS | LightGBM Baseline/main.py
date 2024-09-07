@@ -76,8 +76,8 @@ def main():
     else:
         inference_server.run_local_gateway(
             (
-                '/kaggle/input/um-game-playing-strength-of-mcts-variants/test.csv',
-                '/kaggle/input/um-game-playing-strength-of-mcts-variants/sample_submission.csv'
+                'um-game-playing-strength-of-mcts-variants/data/test.csv',
+                'um-game-playing-strength-of-mcts-variants/data/sample_submission.csv'
             )
         )
 
